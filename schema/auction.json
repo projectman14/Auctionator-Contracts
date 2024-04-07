@@ -1,0 +1,21 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Auction",
+  "type": "object",
+  "required": [
+    "current_bid",
+    "starting_bid"
+  ],
+  "properties": {
+    "current_bid": {
+      "type": "integer",
+      "format": "uint128",
+      "minimum": 0.0
+    },
+    "starting_bid": {
+      "type": "integer",
+      "format": "uint128",
+      "minimum": 0.0
+    }
+  }
+}
